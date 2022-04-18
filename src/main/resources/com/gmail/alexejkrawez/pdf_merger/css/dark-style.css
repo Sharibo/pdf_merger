@@ -1,0 +1,205 @@
+@font-face {
+    -fx-font-family: "Roboto-Bold";
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    -fx-font-family: "RobotoCondensed-Light";
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+    src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+}
+
+.root {
+    -fx-font-family: 'Roboto-Bold', 'sans-serif';
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+
+
+.button {
+    -fx-text-fill: #a0a0a0;
+    -fx-border-radius: 0px;
+    -fx-background-color: black;
+    -fx-padding: 0px;
+}
+
+.button:hover {
+    -fx-border-color: #4897fd;
+    -fx-border-radius: 3px;
+}
+
+
+#addFileIcon {
+    -fx-fill: #3E932AFF;
+}
+#addFiles:hover #addFileIcon {
+    -fx-fill: #42b028;
+}
+#addFiles:hover {
+    -fx-underline: true;
+}
+
+#moveSelectedUpIcon {
+    -fx-fill: #a0a0a0;
+}
+#moveSelectedUp:hover #moveSelectedUpIcon {
+    -fx-fill: #59a4ff;
+}
+#moveSelectedUpIcon:disabled {
+    -fx-fill: white;
+}
+
+#moveSelectedDownIcon {
+    -fx-fill: #a0a0a0;
+    -fx-rotate: 180;
+}
+#moveSelectedDown:hover #moveSelectedDownIcon {
+    -fx-fill: #59a4ff;
+}
+#moveSelectedDownIcon:disabled {
+    -fx-fill: white;
+}
+
+#removeSelectedIcon {
+    -fx-fill: #a0a0a0;
+}
+#removeSelected:hover {
+    -fx-border-color: #7e0f0f;
+}
+#removeSelected:hover #removeSelectedIcon {
+    -fx-fill: #c52929;
+}
+#removeSelectedIcon:disabled {
+    -fx-fill: white;
+}
+
+#removeAllIcon {
+    -fx-fill: #a0a0a0;
+}
+#removeAll:hover {
+    -fx-border-color: #7e0f0f;
+}
+#removeAll:hover #removeAllIcon {
+    -fx-fill: #c52929;
+}
+#removeAllIcon:disabled {
+    -fx-fill: white;
+}
+
+
+#mergeFilesIcon {
+    -fx-fill: #3E932AFF;
+}
+#mergeFiles:hover #mergeFilesIcon {
+    -fx-fill: #42b028;
+}
+#mergeFiles:hover {
+    -fx-underline: true;
+}
+#mergeFiles:disabled {
+    -fx-text-fill: white;
+}
+#mergeFilesIcon:disabled {
+    -fx-fill: white;
+}
+
+.list-view {
+    -fx-font-family: 'RobotoCondensed-Light', 'sans-serif';
+    -fx-font-weight: normal;
+}
+
+#listView {
+    -fx-text-fill: #a0a0a0;
+    -fx-background-color: black;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: #3E932AFF;
+    -fx-border-width: 2 0 2 0;
+}
+
+.list-cell {
+    -fx-text-fill: #a0a0a0;
+    -fx-background-color: black;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #115411;
+    -fx-text-fill: #a0a0a0;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #003c00;
+    -fx-text-fill: #a0a0a0;
+}
+
+
+.list-view > .virtual-flow > .corner {
+    -fx-background-color: #232323;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #232323;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 10.0 0.0 0.0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape : " ";
+    -fx-padding: 0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3E932AFF;
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #378325;
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+
+#footerLabel {
+    -fx-text-fill: #a0a0a0;
+    -fx-label-padding: 0 0 0 8;
+}
+
+#themeChanger:hover {
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px;
+}
+#themeChangerIcon {
+    -fx-fill: #facc16;
+}
+#themeChanger:hover #themeChangerIcon {
+    -fx-fill: white;
+}

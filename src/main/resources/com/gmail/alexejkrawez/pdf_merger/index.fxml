@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<?import javafx.scene.control.ListView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:id="anchorPane"
+            prefHeight="400.0"
+            prefWidth="860.0"
+            fx:controller="com.gmail.alexejkrawez.pdf_merger.Controller">
+
+    <HBox fx:id="hBox"
+          AnchorPane.topAnchor="0"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.rightAnchor="0"
+          minHeight="32.0"
+          maxHeight="32.0">
+
+        <Button fx:id="addFiles"
+                alignment="CENTER"
+                contentDisplay="LEFT"
+                minWidth="96.0"
+                maxWidth="96.0"
+                minHeight="28.0"
+                maxHeight="28.0"
+                text="Add files"
+                onAction="#buttonAddFiles">
+            <HBox.margin>
+                <Insets right="32.0"
+                        left="2.0"
+                        top="2.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon fx:id="addFileIcon" iconLiteral="fltfal-document-add-24" iconSize="24"/>
+            </graphic>
+        </Button>
+
+        <Button fx:id="moveSelectedUp"
+                alignment="CENTER"
+                contentDisplay="CENTER"
+                minWidth="28.0"
+                maxWidth="28.0"
+                minHeight="28.0"
+                maxHeight="28.0"
+                onAction="#buttonMoveSelectedUp"
+                disable="true">
+            <HBox.margin>
+                <Insets top="2.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon fx:id="moveSelectedUpIcon" iconLiteral="fltral-arrow-up-circle-24" iconSize="24"/>
+            </graphic>
+        </Button>
+
+        <Button fx:id="moveSelectedDown"
+                alignment="CENTER"
+                contentDisplay="CENTER"
+                minWidth="28.0"
+                maxWidth="28.0"
+                minHeight="28.0"
+                maxHeight="28.0"
+                onAction="#buttonMoveSelectedDown"
+                disable="true">
+            <HBox.margin>
+                <Insets top="2.0"
+                        right="32.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon fx:id="moveSelectedDownIcon" iconLiteral="fltral-arrow-up-circle-24" iconSize="24"/>
+            </graphic>
+        </Button>
+
+        <Button fx:id="removeSelected"
+                alignment="CENTER"
+                contentDisplay="CENTER"
+                mnemonicParsing="false"
+                minWidth="28.0"
+                maxWidth="28.0"
+                minHeight="28.0"
+                maxHeight="28.0"
+                onAction="#buttonRemoveSelected"
+                disable="true">
+            <HBox.margin>
+                <Insets top="2.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon fx:id="removeSelectedIcon" iconLiteral="fltral-block-24" iconSize="24"/>
+            </graphic>
+        </Button>
+
+        <Button fx:id="removeAll"
+                alignment="CENTER"
+                contentDisplay="CENTER"
+                minWidth="28.0"
+                maxWidth="28.0"
+                minHeight="28.0"
+                maxHeight="28.0"
+                onAction="#buttonRemoveAll"
+                disable="true">
+            <HBox.margin>
+                <Insets top="2.0"
+                        right="32.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon fx:id="removeAllIcon" iconLiteral="fltral-dismiss-circle-24" iconSize="24"/>
+            </graphic>
+        </Button>
+
+        <!--TODO сделать флажок, открывать ли программу просмотра после склейки-->
+
+        <Button fx:id="mergeFiles"
+                alignment="CENTER"
+                contentDisplay="LEFT"
+                minWidth="96.0"
+                maxWidth="96.0"
+                minHeight="28.0"
+                maxHeight="28.0"
+                text="Merge files"
+                onAction="#buttonMergeFiles"
+                disable="true">
+            <HBox.margin>
+                <Insets top="2.0"
+                        left="2.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon fx:id="mergeFilesIcon" iconLiteral="fltfal-document-pdf-24" iconSize="24"/>
+            </graphic>
+        </Button>
+
+    </HBox>
+
+
+    <ListView fx:id="listView"
+              AnchorPane.topAnchor="32.0"
+              AnchorPane.leftAnchor="0"
+              AnchorPane.rightAnchor="0"
+              AnchorPane.bottomAnchor="24.0">
+    </ListView>
+
+
+    <AnchorPane fx:id="footer"
+                AnchorPane.bottomAnchor="0"
+                AnchorPane.leftAnchor="0"
+                AnchorPane.rightAnchor="0"
+                minHeight="24.0"
+                maxHeight="24.0">
+
+        <Label fx:id="footerLabel"
+               AnchorPane.bottomAnchor="0"
+               AnchorPane.leftAnchor="0"
+               AnchorPane.rightAnchor="24.0"
+               minHeight="24.0"
+               maxHeight="24.0"
+               text='Drop PDF-files in the box above or choose "Add files" button from the toolbar'/>
+
+        <Button fx:id="themeChanger"
+                AnchorPane.bottomAnchor="2"
+                AnchorPane.rightAnchor="2"
+                alignment="CENTER"
+                contentDisplay="LEFT"
+                minWidth="20.0"
+                maxWidth="20.0"
+                minHeight="20.0"
+                maxHeight="20.0"
+                onAction="#buttonThemeChanger">
+            <graphic>
+                <FontIcon fx:id="themeChangerIcon" iconLiteral="fltfmz-weather-moon-20" iconSize="20"/>
+            </graphic>
+        </Button>
+
+    </AnchorPane>
+
+
+</AnchorPane>

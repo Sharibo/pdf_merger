@@ -1,0 +1,175 @@
+@font-face {
+    -fx-font-family: "Roboto-Bold";
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    -fx-font-family: "RobotoCondensed-Light";
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+    src: url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+}
+
+.root {
+    -fx-font-family: 'Roboto-Bold', 'sans-serif';
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+
+
+.button {
+    -fx-border-radius: 0px;
+    -fx-background-color: white;
+    -fx-padding: 0px;
+}
+
+.button:hover {
+    -fx-border-color: lightskyblue;
+    -fx-border-radius: 3px;
+}
+
+
+#addFileIcon {
+    -fx-fill: #3E932AFF;
+}
+#addFiles:hover #addFileIcon {
+    -fx-fill: #42b028;
+}
+#addFiles:hover {
+    -fx-underline: true;
+}
+
+
+#moveSelectedUp:hover #moveSelectedUpIcon {
+    -fx-fill: #167efa;
+}
+
+#moveSelectedDownIcon {
+    -fx-rotate: 180;
+}
+#moveSelectedDown:hover #moveSelectedDownIcon {
+    -fx-fill: #167efa;
+}
+
+
+#removeSelected:hover {
+    -fx-border-color: lightcoral;
+}
+#removeSelected:hover #removeSelectedIcon {
+    -fx-fill: firebrick;
+}
+
+#removeAll:hover {
+    -fx-border-color: lightcoral;
+}
+#removeAll:hover #removeAllIcon {
+    -fx-fill: firebrick;
+}
+
+
+#mergeFilesIcon {
+    -fx-fill: #3E932AFF;
+}
+#mergeFiles:hover #mergeFilesIcon {
+    -fx-fill: #42b028;
+}
+#mergeFiles:hover {
+    -fx-underline: true;
+}
+
+
+.list-view {
+    -fx-font-family: 'RobotoCondensed-Light', 'sans-serif';
+    -fx-font-weight: normal;
+}
+
+#listView {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2 0 2 0;
+}
+
+.list-cell {
+    -fx-background-color: white;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #589d47;
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #87b77b;
+    -fx-text-fill: white;
+}
+
+
+.list-view > .virtual-flow > .corner {
+    -fx-background-color: #dcdcdc;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #dcdcdc;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 10.0 0.0 0.0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape : " ";
+    -fx-padding: 0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #589d47;
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #458636;
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+
+#footerLabel {
+    -fx-label-padding: 0 0 0 8;
+}
+
+#themeChanger:hover {
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px;
+}
+#themeChangerIcon {
+    -fx-fill: #167efa;
+}
+#themeChanger:hover #themeChangerIcon {
+    -fx-fill: black;
+}
